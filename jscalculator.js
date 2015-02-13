@@ -26,7 +26,7 @@ for(var i = 0; i < keys.length; i++) {
 			// Replace all instances of x and ÷ with * and / respectively. This can be done easily using regex and the 'g' tag which will replace all instances of the matched character/substring
 			equation = equation.replace(/x/g, '*').replace(/÷/g, '/');
 			
-			/4Final thing left to do is checking the last character of 
+			/*4Final thing left to do is checking the last character of 
 			the equation. If it's an operator or a decimal, remove it*/
 			if(operators.indexOf(lastChar) > -1 || lastChar == '.')
 				equation = equation.replace(/.$/, '');
